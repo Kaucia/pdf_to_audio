@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Audio Book</title>
+</head>
+<body>
+    <h1>Your Audio Book is Ready!</h1>
+    <audio controls>
+        <source src="{{ url_for('static', filename='uploads/' + filename) }}" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <div>
+        <p>Enjoy your audio book! The service is supported by ads:</p>
+        <!-- Insert your ad code here (e.g., Google AdSense) -->
+    </div>
+</body>
+</html>
